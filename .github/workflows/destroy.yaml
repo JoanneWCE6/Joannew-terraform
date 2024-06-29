@@ -1,4 +1,8 @@
 
+name: Terraform Destroy
+
+on: workflow_dispatch
+
 env:            
   AWS_REGION: ap-southeast-1  
 
@@ -25,3 +29,4 @@ jobs:
     
     - name: Terraform Destroy
       run: terraform destroy -auto-approve
+
